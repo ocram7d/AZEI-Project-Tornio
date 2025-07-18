@@ -170,7 +170,7 @@ kamp = Va_lim/dcvolt;  % costante di amplificazione
 Vctr = Va/kamp; % da mettere in ingresso all'amplificatore di potenza
 
 %% Limitatore di corrente
-ilim = 1*Ia_nom; % 20% in più della nominale
+ilim = Ia_nom; 
 klim_corr = dcvolt/(0.2*Ia_nom); % soglie per deadzone 
 
 %% Grafici con limitatore ed amplificatore
